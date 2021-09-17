@@ -1,0 +1,37 @@
+
+
+
+spring:
+
+  security:
+
+    oauth2:
+      client:
+        registration:
+#
+#          github:
+#            client-id:
+#            client-secret:
+#
+#          google:
+#            client-id: 970041262862-mheg9r7vg4gt3krdm00ea6gs53l9thi1.apps.googleusercontent.com
+#            client-secret: nT_g98L2EMCFJKAflrcaRyKf
+#
+#          facebook:
+#            client-id: 6425403850804903
+#            client-secret: 3bbc66550ba5b814b4a71f6804e490e6
+#
+          okta:
+            client-id: 0oa1v87urdNKSqkox5d7
+            client-secret: KPlqAwsZwX1NtXI7fv2lL8bm1Vqc5yyT9reTZDFB
+            scope:
+              - openid
+              - profile
+        provider:
+          okta:
+            issuer-uri: https://dev-20307269.okta.com/oauth2/default
+logging:
+  level:
+    root: debug
+
+
